@@ -6,4 +6,4 @@ Contains a bunch of useful scripts, configuration and instructions for developin
 * [Adding pre-commit hooks](https://github.com/cp2004/OctoPrint-Knowledge/blob/main/pre-commit.md)
 * [Release zip upload action](https://github.com/cp2004/OctoPrint-Knowledge/blob/main/releasezip-upload.md)
 * [Run-Debug Configuration](https://github.com/cp2004/OctoPrint-Knowledge/blob/main/run-debug.md)
-* [Adding release channels to a plugin](https://github.com/cp2004/OctoOprint-Knowledge/blob/main/release-channels.md
+* [Adding release channels to a plugin](https://github.com/cp2004/OctoPrint-Knowledge/blob/main/release-channels.md)
