@@ -3,9 +3,9 @@
 Pre-commit formatting is awesome. It makes sure that your files are properly formatted before commiting. 
 Adding them to a file watcher and workflow means all the hassle is handled for you as well... beautiful.
 
-1. Put this file in the project root, as .pre-commit-config.yaml (This assumes Py2/3 compatibility for now):
+1. Put this file in the project root, as .pre-commit-config.yaml (This assumes Py2/3 compatibility, and that you have installed versioneer):
 ```yaml
-exclude: ^(translations/|.*\.css|.*\.svg|octoprint_autologin_config/_version.py|versioneer.py)
+exclude: ^(translations/|.*\.css|.*\.svg|YOUR_PLUGIN_PACKAGE/_version.py|versioneer.py)
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.3.0
