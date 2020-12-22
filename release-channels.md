@@ -68,10 +68,10 @@ Here's a guide detailing 'how to add a release channel', and then how to publish
    The tag that you use is important, since it lets OctoPrint know whether the user needs to update or not.
    
    It is recommended to tag release candidates with the letters `rc`, such as `1.5.0rc1`. See also [Semantic Versioning](https://semver.org/).
-   Make sure you select the tag to be created from `rc`!
+   Make sure you select the tag to be created from the `rc` branch!
    
  Finished! Now you can test out this new functionality with your next release. 
- If you don't feel confident that you will get this all right first time, create a dummy plugin to test it with
+ If you don't feel confident that you will get this all right first time, create a dummy plugin to test it with. I did this to start with, before rolling them out to my various plugins.
  
  ***Guide by Charlie Powell, @cp2004***
  
