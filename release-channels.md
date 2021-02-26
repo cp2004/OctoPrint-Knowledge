@@ -54,21 +54,26 @@ Here's a guide detailing 'how to add a release channel', and then how to publish
 4. Run your plugin, and check that they show up in the UI, under 'Software Update'
 
 ### Development & release process, to use this channel.
-1. Stable releases:
-   Make sure your code is merged to the 'Stable' branch, then you can go ahead and create the release.
+* **Stable releases:**
+   1. Make sure your code is merged to the 'Stable' branch you defined above
+   2. Make sure you have incremented the version in `setup.py`, or you use something like versioneer to do this for you.
+   3. Tagging the release:
    
-   These releases need to be tagged from your `master` branch (or whatever you configured it above). 
-   In the github UI, this can be selected to the right of the tag. See also [Creating a release](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository#creating-a-release)
-   from the github docs.
+      These releases need to be tagged from your `master` branch (or whatever you configured it above). 
+      In the github UI, this can be selected to the right of the tag. See also [Creating a release](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository#creating-a-release) from the github docs.
    
-2. Release candidates:
-   The code that you want to release needs to be merged to your 'Release Candidate' branch, before you can create the release.
+* **Release candidates:**
+   1. The code that you want to pre-release needs to be merged to your 'Release Candidate' branch, before you can create the release.
+   2. Make sure you have incrememented the version number in `setup.py` to something considered *below* the stable version that this release candidate will become. [See PEP 440 for more details (long read)](https://www.python.org/dev/peps/pep-0440/).
+      Examples: `1.1.0rc1`, `2.3.0rc3`
+   3. Tagging the release:
+       
+      These releases need to be tagged from your `rc` branch (or whatever you configured it above), and marked as 'pre-release', as we told OctoPrint this was a prerelease channel.
+      
+      The tag that you use is important, since it lets OctoPrint know whether the user needs to update or not, and that it will be considered below the next 'stable' version.
    
-   These releases need to be tagged from your `rc` branch (or whatever you configured it above).
-   The tag that you use is important, since it lets OctoPrint know whether the user needs to update or not.
-   
-   It is recommended to tag release candidates with the letters `rc`, such as `1.5.0rc1`. See also [Semantic Versioning](https://semver.org/).
-   Make sure you select the tag to be created from the `rc` branch!
+      It is recommended to tag release candidates with the letters `rc`, such as `1.5.0rc1`. See also [Semantic Versioning](https://semver.org/).
+      Make sure you select the tag to be created from the `rc` branch, so that the Software Update will pick it up on the right channel!
    
  Finished! Now you can test out this new functionality with your next release. 
  If you don't feel confident that you will get this all right first time, create a dummy plugin to test it with. I did this to start with, before rolling them out to my various plugins.
