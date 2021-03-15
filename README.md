@@ -9,6 +9,7 @@ These are mostly just things I figured out myself, and thought it was worth writ
 * [Release zip upload action](https://github.com/cp2004/OctoPrint-Knowledge/blob/main/releasezip-upload.md)
 * [Run-Debug Configuration](https://github.com/cp2004/OctoPrint-Knowledge/blob/main/run-debug.md)
 * [Adding release channels to a plugin](https://github.com/cp2004/OctoPrint-Knowledge/blob/main/release-channels.md)
+* [Disabling caching for frontend development](https://github.com/cp2004/OctoPrint-Knowledge/blob/main/disable_cache.md)
 
 ## License
 
