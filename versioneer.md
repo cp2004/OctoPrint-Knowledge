@@ -88,3 +88,5 @@ If you want to use mainline versioneer, most of this applies with the exception 
      ```
      
 That *should* be everything! Give it a go, install your plugin and see the version number change as you push commits and tag releases!
+
+## ⚠️ Warning: this guide currently doesn't cover building a release asset for new installs. Just downloading from the plugin manager will result in `0+unknown` in it's current form.
